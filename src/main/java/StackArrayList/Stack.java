@@ -28,8 +28,8 @@ public class Stack<E> {
     }
 
     public E pop(){
+        E poppedItem = elements.get(elements.size() - 1);
         elements.remove(elements.size() - 1);
-        System.out.println(elements.toString());
-        return elements.get(0);
+        return poppedItem;
     }
 }
