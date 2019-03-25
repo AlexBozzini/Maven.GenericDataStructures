@@ -1,16 +1,17 @@
 package Swap;
-//
-//import org.junit.Assert;
-//import org.junit.Test;
-//
-///**
-// * Get the tests passing.
-// */
-//public class SwapTest {
-//    @Test
-//    public void testSwap() throws Exception {
-//        Double[] result = Swap.swap(0,1, 1.5, 2,3);
-//        Double[] expected = {2.0, 1.5, 3.0};
-//        Assert.assertArrayEquals(expected, result);
-//    }
-//}
+
+import Table.Table;
+import org.junit.Assert;
+import org.junit.Test;
+
+/**
+ * Get the tests passing.
+ */
+public class SwapTest<T> {
+    @Test
+    public void testSwap() {
+        T[] result = (T[]) Swap.swap(0,1, 1, 2,3);
+        Integer[] expected = {2, 1, 3};
+        Assert.assertArrayEquals(expected, result);
+    }
+}
